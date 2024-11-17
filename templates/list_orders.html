@@ -2,17 +2,18 @@
 <html>
     <head>
         <title>List of Order</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/list_orders.css') }}">
     </head>
     <body>
-        <h1>All Bookings</h1>
-        {% for booking in booking_details_list %}
-            <div>
-                <p>Hii. {{ booking.f_name }} {{ booking.l_name }}</p>
-                <p>Email: {{ booking.email }}</p>
-                <p>Phone: {{ booking.phone }}</p>
-                <p>Message: {{ booking.message }}</p>
-                <hr>
+        <div class="booking-container">
+            {% for booking in booking_details_list %}
+            <div class="booking-card">
+                <h2>Hi, {{ booking.f_name }} {{ booking.l_name }}</h2>
+                <p><strong>Email:</strong> {{ booking.email }}</p>
+                <p><strong>Phone:</strong> {{ booking.phone }}</p>
+                <p><strong>Message:</strong> {{ booking.message }}</p>
             </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </body>
 </html>

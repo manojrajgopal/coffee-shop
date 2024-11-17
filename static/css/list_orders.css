@@ -1,0 +1,55 @@
+/* General container styling */
+.booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+/* Card styling */
+.booking-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    width: 300px; /* Fixed width for cards */
+    text-align: left; /* Align text to the left */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    color: #333; /* Dark grey text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.booking-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Headings */
+.booking-card h2 {
+    font-size: 1.5em; /* Larger heading font size */
+    color: #007bff; /* Bootstrap-style blue color */
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.booking-card p {
+    margin: 5px 0; /* Space between paragraphs */
+    line-height: 1.6; /* Better readability */
+}
+
+/* Strong elements */
+.booking-card p strong {
+    color: #555; /* Medium grey for labels */
+}
+
+/* Horizontal rule */
+.booking-card hr {
+    border: 0;
+    height: 1px;
+    background: #eee; /* Subtle divider line */
+    margin: 20px 0;
+}
