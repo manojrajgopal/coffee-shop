@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List of Order</title>
+    </head>
+    <body>
+        <h1>All Bookings</h1>
+        {% for booking in booking_details_list %}
+            <div>
+                <p>Hii. {{ booking.f_name }} {{ booking.l_name }}</p>
+                <p>Email: {{ booking.email }}</p>
+                <p>Phone: {{ booking.phone }}</p>
+                <p>Message: {{ booking.message }}</p>
+                <hr>
+            </div>
+        {% endfor %}
+    </body>
+</html>
