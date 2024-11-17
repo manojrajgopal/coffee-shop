@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, session
 import time, logging
+from app2 import app2
 
 booking_details_list = []
 active_users = {}
@@ -7,6 +8,8 @@ active_users = {}
 log.setLevel(logging.ERROR)"""
 
 app = Flask(__name__)
+
+app.register_blueprint(app2, url_prefix='/app2')
 
 @app.route('/')
 def index():
