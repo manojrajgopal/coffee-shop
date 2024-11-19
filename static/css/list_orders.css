@@ -1,41 +1,47 @@
-/* General container styling */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
 /* Styling for h1 heading */
 h1 {
-    font-family: 'Arial', sans-serif; /* Clean, modern font */
     font-size: 2.5em; /* Large font size */
     font-weight: bold; /* Bold text */
-    color: #007bff; /* Bootstrap-style blue color */
+    color: #c49b63; /* Bootstrap-style blue color */
     text-align: center; /* Center the heading */
     margin-bottom: 20px; /* Add spacing below the heading */
     text-transform: uppercase; /* Make the text uppercase */
     letter-spacing: 2px; /* Add spacing between letters */
-    border-bottom: 2px solid #ddd; /* Add an underline */
-    display: inline-block; /* Make the border width match the text width */
+    border-bottom: 2px solid #3f3f3f; /* Add an underline */
+    display: flex; /* Make the border width match the text width */
     padding-bottom: 10px; /* Add some spacing below the text */
+    justify-content: center;
+    text-shadow: 0 0 10px #70593c;
+    backdrop-filter: blur(7px);
+    padding-top: 10px;
 }
-
-
 .booking-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    background-color: #f8f9fa; /* Light grey background */
+    background-color: #00000024; /* Light grey background */
 }
 
 /* Card styling */
 .booking-card {
-    background-color: #ffffff; /* White background */
-    border: 1px solid #ddd; /* Light grey border */
+    backdrop-filter: blur(10px);
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 20px #000, inset 0 0 10px #fff; /* Subtle shadow */
     padding: 20px; /* Inner spacing */
-    width: 300px; /* Fixed width for cards */
+    width: 350px; /* Fixed width for cards */
     text-align: left; /* Align text to the left */
     font-family: 'Arial', sans-serif; /* Modern font */
-    color: #333; /* Dark grey text color */
+    color: #a9a9a9; /* Dark grey text color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -48,19 +54,21 @@ h1 {
 /* Headings */
 .booking-card h2 {
     font-size: 1.5em; /* Larger heading font size */
-    color: #007bff; /* Bootstrap-style blue color */
+    color: #c1c1c1; /* Bootstrap-style blue color */
     margin-bottom: 10px;
+    text-shadow: 0 0 10px #000;
 }
 
 /* Paragraph styling */
 .booking-card p {
+    text-shadow: 0 0 5px #000;
     margin: 5px 0; /* Space between paragraphs */
     line-height: 1.6; /* Better readability */
 }
 
 /* Strong elements */
 .booking-card p strong {
-    color: #555; /* Medium grey for labels */
+    color: #a28051; /* Medium grey for labels */
 }
 
 /* Horizontal rule */

@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
         <title>List of Order</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/list_orders.css') }}">
     </head>
     <body>
-        <h1>Order List</h1>
+        <h1 style="text-align: center;">Appointment</h1>
         <div class="booking-container">
             {% for booking in booking_details_list %}
             <div class="booking-card">
-                <h2>Mr, {{ booking.f_name }} {{ booking.l_name }}</h2>
+                <h2 style="text-align: center;">{{ booking.f_name }} {{ booking.l_name }}</h2>
                 <p><strong>Email:</strong> {{ booking.email }}</p>
                 <p><strong>Phone:</strong> {{ booking.phone }}</p>
                 <p><strong>Message:</strong> {{ booking.message }}</p>
@@ -18,3 +28,8 @@
         </div>
     </body>
 </html>
+<style>
+    body{
+        background: url("{{ url_for('static', filename='images/image2.jpg') }}");
+    }
+</style>
