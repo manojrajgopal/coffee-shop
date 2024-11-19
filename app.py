@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, session
 import time, logging
 from app2 import app2
+from db import signUp, loginn
 
 booking_details_list = []
 active_users = {}
@@ -24,7 +25,22 @@ def signup():
     confirm_password = request.form['con_pass']
 
     print(name, username, ph_no, password, confirm_password)
+
+    signUp(name=name, username=username, phone=ph_no, password=password)
+
     return render_template('index.html', name=name)
+
+@app.route('/logining', methods=['POST'])
+def logining():
+    username = request.form['username']
+    password = request.form['password']
+
+    name = loginn(username=username, password=password)
+
+    if name:
+        return render_template('index.html', name=name)
+    else:
+        return render_template('login.html')
 
 def index():
     # To count current number of users are logged in 
