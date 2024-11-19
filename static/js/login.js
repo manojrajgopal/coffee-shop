@@ -37,3 +37,14 @@ document.getElementById("hidesignup").addEventListener("click", function () {
     contentlogin.style.display = "block";
     contentsignup.style.display = "none";
   });
+
+function validateForm(event) {
+    const password = document.getElementById("signup_password").value;
+    const confirmPassword = document.getElementById("signup_confirm_password").value;
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      event.preventDefault();  // Prevent form submission
+      alert("Password and Confirm Password do not match!");
+    }
+  }

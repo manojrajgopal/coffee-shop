@@ -15,6 +15,17 @@ app.register_blueprint(app2, url_prefix='/app2')
 def login():
     return render_template('login.html', title='Login/SignUp')
 
+@app.route('/signup', methods=['POST'])
+def signup():
+    name = request.form['name']
+    username = request.form['username']
+    ph_no = request.form['phone']
+    password = request.form['pass']
+    confirm_password = request.form['con_pass']
+
+    print(name, username, ph_no, password, confirm_password)
+    return render_template('index.html', name=name)
+
 def index():
     # To count current number of users are logged in 
     session['user_id'] = str(time.time())  # Unique session ID based on timestamp
