@@ -12,6 +12,9 @@ app = Flask(__name__)
 app.register_blueprint(app2, url_prefix='/app2')
 
 @app.route('/')
+def login():
+    return render_template('login.html', title='Login/SignUp')
+
 def index():
     # To count current number of users are logged in 
     session['user_id'] = str(time.time())  # Unique session ID based on timestamp
