@@ -91,3 +91,5 @@ if __name__ == "__main__":
     app.secret_key = 'manoj_rajgopal'
     app.logger.setLevel(logging.ERROR)
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+print("Hii Binny")
