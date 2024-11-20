@@ -1,9 +1,5 @@
-Developed a full-stack web application for a Coffee Shop: Designed and implemented an interactive user interface using HTML, CSS, and JavaScript for seamless customer interactions, allowing users to browse menus, place orders, and manage their profiles.
+Developed a full-stack Coffee Shop web application with an interactive user interface using HTML, CSS, 
+and JavaScript, allowing customers to browse menus, place orders, and manage profiles.
 
-Built the backend using Python, Flask, and SQL: Utilized Flask to create a RESTful API for handling customer orders, and integrated SQL for managing data, including order history, inventory, and user accounts, ensuring efficient data retrieval and management.
-
-For testing purpose
-
-I changed color to main file in this project
-
-I created another page is "to order coffee"
+Built a robust backend using Python, Flask, and SQL to handle customer orders, manage order history, 
+inventory, and user accounts, ensuring efficient data retrieval.
