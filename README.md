@@ -3,3 +3,5 @@ and JavaScript, allowing customers to browse menus, place orders, and manage pro
 
 Built a robust backend using Python, Flask, and SQL to handle customer orders, manage order history, 
 inventory, and user accounts, ensuring efficient data retrieval.
+
+adarsh 
